@@ -1,2 +1,2 @@
-# WebApplications_week_1_tictactoe
+# WebApplications_week_2_tictactoe
 Created with CodeSandbox
