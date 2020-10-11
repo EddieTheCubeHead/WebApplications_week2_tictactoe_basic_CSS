@@ -1,9 +1,7 @@
-body {
-  font-family: sans-serif;
-}
-
 * {
   text-align: center;
+  font-family: Helvetica;
+  font: Helvetica;
 }
 
 #game {
@@ -15,8 +13,7 @@ body {
 #board {
   align-self: center;
   display: grid;
-  grid-row-gap: 6px;
-  grid-column-gap: 6px;
+  width: 320;
   border: 1px solid black;
   border-collapse: collapse;
   margin-left: auto;
@@ -24,7 +21,7 @@ body {
 }
 
 #board .cell {
-  font-family: helvetica;
+  font: Helvetica;
   width: 60px;
   height: 60px;
   font-size: 30px;
