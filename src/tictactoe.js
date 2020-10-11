@@ -6,6 +6,7 @@ var current_player = 1;
 var board = [];
 var clock = 0; // milliseconds
 var timer = false;
+const EXPAND = false;
 
 // Creating markers for X, O and empty
 // Could just use strings but this in my opinion serves as good practice
@@ -96,10 +97,11 @@ function on_cell_click(id) {
   update_current_player();
 
   if (
-    row >= 3 &&
-    column >= 3 &&
-    row < board.length - 3 &&
-    column < board[0].length - 3
+    !EXPAND ||
+    (row >= 3 &&
+      column >= 3 &&
+      row < board.length - 3 &&
+      column < board[0].length - 3)
   ) {
     board_display.rows[row].cells[column].innerHTML = board[row][column];
     board_display.rows[row].cells[column].style.background = get_player_color(
